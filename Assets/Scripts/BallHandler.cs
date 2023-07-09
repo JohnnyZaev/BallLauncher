@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 
@@ -77,7 +76,7 @@ public class BallHandler : MonoBehaviour
 		_currentBallRigidbody.isKinematic = false;
 		_currentBallRigidbody = null;
 		
-		Invoke	(nameof(DetachBall), delayDuration);
+		Invoke(nameof(DetachBall), delayDuration);
 	}
 
 	private void DetachBall()
